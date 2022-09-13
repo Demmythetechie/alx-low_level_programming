@@ -4,3 +4,4 @@ Task 2: The script generates the assembly code of a C code and save it in an out
 Task 3: This script that compiles a C file and creates an executable named cisfun.
 Task 4: This c program prints a sentence using puts.
 Task 5: This c program prints a sentence using printf.
+Task 6: Wrote a C program that prints the size of various

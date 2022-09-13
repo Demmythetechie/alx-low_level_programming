@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - prints a sentence(Formatted string) usiing printf and return 0
+ * main - prints a sentence(Formatted string) using printf and returns 0
  *
  * Return: 0
  */
