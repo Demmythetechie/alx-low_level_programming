@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 /**
  * main - prints whether variable n is negative, positive or zero.
@@ -19,7 +21,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		print("%i is zero\n", n);
+		printf("%i is zero\n", n);
 	}
 	else
 	{
