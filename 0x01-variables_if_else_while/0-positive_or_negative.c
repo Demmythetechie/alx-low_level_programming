@@ -1,4 +1,4 @@
-#include<stdio>
+#include<stdio.h>
 
 /**
  * main - prints whether variable n is negative, positive or zero.
