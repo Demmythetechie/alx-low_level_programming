@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+/**
+ * main - The program prints alphabets in lowercase using a while loop.
+ *
+ * Return: No return
+ */
+
+int main(void)
+{
+	char alphabet = 'a';
+
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
+	putchar('\n');
+}
