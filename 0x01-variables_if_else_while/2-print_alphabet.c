@@ -3,7 +3,7 @@
 /**
  * main - The program prints alphabets in lowercase using a while loop.
  *
- * Return: No return
+ * Return: 0
  */
 
 int main(void)
