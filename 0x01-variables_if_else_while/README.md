@@ -6,3 +6,4 @@ Task 4: Wrote a program that prints alphabets a-z with an exception of e and q.
 Task 5: Wrote a program that prints all single digit of base 10.
 Task 6: Wrote a program that prints all single digit of base 10 using putchar.
 Task 7: Wrote a program that prints in reverse alphabet in lowercase.
+Task 8: wrote a program that prints all number of base 16 in lowercase.
