@@ -18,7 +18,7 @@ int main(void)
 		n++;
 	}
 
-	while (n_hex <= 'e')
+	while (n_hex <= 'f')
 	{
 		putchar(n_hex);
 		n_hex++;
