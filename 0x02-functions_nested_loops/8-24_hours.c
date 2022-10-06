@@ -14,7 +14,7 @@ void jack_bauer(void)
 	{
 		int seconds = 0;
 
-		while (seconds <= 60)
+		while (seconds <= 59)
 		{
 			int one_h = hours / 10;
 			int two_h = hours % 10;
@@ -28,10 +28,6 @@ void jack_bauer(void)
 			_putchar(two_s + '0');
 			_putchar('\n');
 			seconds++;
-			if (hours == 23 && seconds == 60)
-			{
-				break;
-			}
 		}
 		hours++;
 	}
