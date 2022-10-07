@@ -22,7 +22,10 @@ void times_table(void)
 
 			if (multiplied < 10)
 			{
-				_putchar(' ');
+				if (n_times != 0)
+				{
+					_putchar(' ');
+				}
 				_putchar(two_m + '0');
 			}
 			else
