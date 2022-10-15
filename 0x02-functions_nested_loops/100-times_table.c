@@ -25,9 +25,16 @@ void print_times_table(int n)
 
 				if (multiplied <= 9)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(two_m + '0');
+					if (n_times == 0)
+					{
+						_putchar(two_m + '0');
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(two_m + '0');
+					}
 				}
 				else if (multiplied < 100 && multiplied > 9)
 				{
