@@ -33,30 +33,31 @@ void print_to_98(int n)
 
 			if (n < 10)
 			{
-				if (n < -9)
+				if (n < -9 && n > -100)
 				{
 					_putchar(one_n + '0');
 					_putchar(two_n + '0');
+				}
+				else if (n < -99)
+				{
+					int one_h = nw / 100;
+					int two_h = nw / 10;
+					int two_h2 = two_h % 10;
+					int three_h = nw % 10;
+					_putchar(one_h + '0');
+					_putchar(two_h2 + '0');
+					_putchar(three_h + '0');
 				}
 				else
 				{
 					_putchar(two_n + '0');
 				}
+
 			}
 			else if (n < 100 && n >= 10)
 			{
 				_putchar(one_n + '0');
 				_putchar(two_n + '0');
-			}
-			else
-			{
-				int one_h = nw / 100;
-				int two_h = nw / 10;
-				int two_h2 = two_h % 10;
-				int three_h = nw % 10;
-				_putchar(one_h + '0');
-				_putchar(two_h2 + '0');
-				_putchar(three_h + '0');
 			}
 
 			if (n == 98)
