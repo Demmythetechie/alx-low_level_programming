@@ -14,6 +14,7 @@ void print_to_98(int n)
 	{
 		int one_n = n / 10;
 		int two_n = n % 10;
+
 		_putchar(one_n + '0');
 		_putchar(two_n + '0');
 		_putchar('\n');
@@ -44,6 +45,7 @@ void print_to_98(int n)
 					int two_h = nw / 10;
 					int two_h2 = two_h % 10;
 					int three_h = nw % 10;
+
 					_putchar(one_h + '0');
 					_putchar(two_h2 + '0');
 					_putchar(three_h + '0');
@@ -79,6 +81,7 @@ void print_to_98(int n)
 			int nw = abs(n);
 			int one_n = nw / 10;
 			int two_n = nw % 10;
+
 			if (n < 100)
 			{
 				_putchar(one_n + '0');
@@ -90,6 +93,7 @@ void print_to_98(int n)
 				int two_h = nw / 10;
 				int two_h2 = two_h % 10;
 				int three_h = nw % 10;
+
 				_putchar(one_h + '0');
 				_putchar(two_h2 + '0');
 				_putchar(three_h + '0');
