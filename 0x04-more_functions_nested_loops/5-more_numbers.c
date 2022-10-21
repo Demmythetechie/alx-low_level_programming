@@ -9,9 +9,11 @@
 void more_numbers(void)
 {
 	int n_times = 1;
+
 	while (n_times <= 10)
 	{
 		int num = 0;
+
 		while (num <= 14)
 		{
 			int num1 = num / 10;
