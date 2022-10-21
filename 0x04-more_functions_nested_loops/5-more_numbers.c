@@ -8,7 +8,7 @@
 
 void more_numbers(void)
 {
-	int n_times = 0;
+	int n_times = 1;
 	while (n_times <= 10)
 	{
 		int num = 0;
@@ -24,7 +24,7 @@ void more_numbers(void)
 			_putchar(num2 + '0');
 			num++;
 		}
-		n_times++;
 		_putchar('\n');
+		n_times++;
 	}
 }
