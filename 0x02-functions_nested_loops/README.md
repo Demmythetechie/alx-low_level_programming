@@ -10,3 +10,4 @@ Task 9: This program prints the 9 times table starting with 0.
 Task 10: This program returns the sum of two integer.
 Task 11: Prints all natural numbers from n (could be any number) to 98.
 Task 12: This program prints n times table starting from 0.
+Task 13: This program prints the sum of 3 or 5 multiples below 1024.
