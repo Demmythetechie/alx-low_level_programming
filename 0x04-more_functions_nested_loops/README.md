@@ -4,3 +4,4 @@ Task 2: This program returns the product of integer argument a and b.
 Task 3:
 Task 4: This program prints number  1 - 9 skipping 2 and 4.
 Task 5: This program prints number 1 - 14 x10.
+Task 6: This program prints underscore based on the argument in the function.
