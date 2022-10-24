@@ -1,5 +1,5 @@
 #include<stdlib.h>
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - This program conduct a fizz buzz test with conditions of multiples.
@@ -20,33 +20,33 @@ int main(void)
 
 		if (mul_3 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
 		}
 		else if (mul_5 == 0)
 		{
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
 		}
 		else
 		{
 			if (i < 10)
 			{
-				_putchar(two_i + '0');
+				putchar(two_i + '0');
 			}
 			else
 			{
-				_putchar(one_i + '0');
-				_putchar(two_i + '0');
+				putchar(one_i + '0');
+				putchar(two_i + '0');
 			}
 		}
-		_putchar(' ');
+		putchar(' ');
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
