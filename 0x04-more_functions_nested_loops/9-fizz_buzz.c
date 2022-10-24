@@ -13,36 +13,20 @@ int main(void)
 
 	while (i <= 100)
 	{
-		int one_i = i / 10;
-		int two_i = i % 10;
 		int mul_3 = i % 3;
 		int mul_5 = i % 5;
 
 		if (mul_3 == 0)
 		{
-			putchar('F');
-			putchar('i');
-			putchar('z');
-			putchar('z');
+			printf("Fizz");
 		}
 		else if (mul_5 == 0)
 		{
-			putchar('B');
-			putchar('u');
-			putchar('z');
-			putchar('z');
+			printf("Buzz");
 		}
 		else
 		{
-			if (i < 10)
-			{
-				putchar(two_i + '0');
-			}
-			else
-			{
-				putchar(one_i + '0');
-				putchar(two_i + '0');
-			}
+			printf("%i", i);
 		}
 		putchar(' ');
 		i++;
