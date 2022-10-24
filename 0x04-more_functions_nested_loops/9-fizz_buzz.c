@@ -16,7 +16,11 @@ int main(void)
 		int mul_3 = i % 3;
 		int mul_5 = i % 5;
 
-		if (mul_3 == 0)
+		if (mul_3 == 0 && mul_5 == 0)
+		{
+			printf("FizzBuzz");
+		}
+		else if (mul_3 == 0)
 		{
 			printf("Fizz");
 		}
