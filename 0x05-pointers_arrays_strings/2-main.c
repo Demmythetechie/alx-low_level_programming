@@ -9,10 +9,9 @@
 
 int main(void)
 {
-	char *str;
+	char str[18] = "My first strlen!\0";
 	int len;
 
-	str = "My first strlen!\0";
 	len = _strlen(str);
 	printf("%i\n", len);
 	return (0);
