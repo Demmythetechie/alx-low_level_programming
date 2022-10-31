@@ -11,13 +11,14 @@
 void puts_half(char *str)
 {
 	int len = strlen(str);
-	int n_times = 1;
+	int n_times = 0;
 	int result = len % 2;
 	int half = len / 2;
+	int n = (len - 1) / 2;
 
 	if (result == 0)
 	{
-		while (n_times <= len)
+		while (n_times < len)
 		{
 			if (n_times < half)
 			{
@@ -31,7 +32,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		_putchar(*(str + len));
+		_putchar(*(str + n));
 	}
 	_putchar('\n');
 }
