@@ -34,7 +34,7 @@ void puts_half(char *str)
 	{
 		while (n_times < len)
 		{
-			if (n_times < n)
+			if (n_times <= n)
 			{
 			}
 			else
