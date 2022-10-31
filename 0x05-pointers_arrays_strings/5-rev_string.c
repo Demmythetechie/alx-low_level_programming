@@ -10,22 +10,14 @@
 
 void rev_string(char *s)
 {
-	int len = strlen(s) - 1;
-	int num = 0;
-	int n_times = len;
-	char str[len];
+	char *str = s;
+	int l = strlen(s) - 1;
+	int n_times = l;
 	int a[2];
-
 	a[0] = 0;
 	a[1] = 0;
 
-	while (num <= len)
-	{
-		str[num] = *(s + num);
-		num++;
-	}
-
-	while (n_times <= len)
+	while (n_times <= l)
 	{
 		if (n_times == -1)
 		{
@@ -35,11 +27,12 @@ void rev_string(char *s)
 		{
 			while (a[0] <= a[1])
 			{
-				*(s + a[0]) = str[n_times];
+				*(str + a[0]) = *(s + n_times);
 				a[0]++;
 			}
 			a[1]++;
 			n_times--;
 		}
 	}
+	s = str;
 }
