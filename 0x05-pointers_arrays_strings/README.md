@@ -4,4 +4,4 @@ task 2: This program returns the length of the string passed into the _ strlen()
 task 3: This program prints the string passed into the function _ puts().
 task 4: This program prints the string passed into function printrev() in reverse.
 task 5: This program returns the string passed into function revstring() in reverse.
-task 6: This program prints all characters of string str that are divisible by 2.
+task 6: This program prints one character of string str and skip one till the end of the string.

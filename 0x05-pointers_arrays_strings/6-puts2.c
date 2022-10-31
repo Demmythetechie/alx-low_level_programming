@@ -2,8 +2,8 @@
 #include<string.h>
 
 /**
- * puts2 - This function prints the all character divisible by 2.
- * @str: The chracter being divisible.
+ * puts2 - This function prints one character and skip one over and over.
+ * @str: charcter being printed from the string.
  *
  * Return: void
  */
@@ -15,7 +15,7 @@ void puts2(char *str)
 
 	while (n_times <= len)
 	{
-		int result = *(str + n_times) % 2;
+		int result = n_times % 2;
 
 		if (result == 0)
 		{
