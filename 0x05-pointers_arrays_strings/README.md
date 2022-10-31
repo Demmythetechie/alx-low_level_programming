@@ -7,3 +7,4 @@ task 5: This program returns the string passed into function revstring() in reve
 task 6: This program prints one character of string str and skip one till the end of the string.
 task 7: This program prints the second half of the string passed into the function.
 task 8: This function prints the elements of an array depending int n.
+task 9: This function copied one string to another using strcpy(which is the only way)
