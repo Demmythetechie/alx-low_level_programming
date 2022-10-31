@@ -32,7 +32,17 @@ void puts_half(char *str)
 	}
 	else
 	{
-		_putchar(*(str + n));
+		while (n_times < len)
+		{
+			if (n_times < n)
+			{
+			}
+			else
+			{
+				_putchar(*(str + n_times));
+			}
+			n_times++;
+		}
 	}
 	_putchar('\n');
 }
