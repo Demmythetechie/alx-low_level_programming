@@ -6,3 +6,4 @@ task 4: This program prints the string passed into function printrev() in revers
 task 5: This program returns the string passed into function revstring() in reverse.
 task 6: This program prints one character of string str and skip one till the end of the string.
 task 7: This program prints the second half of the string passed into the function.
+task 8: This function prints the elements of an array depending int n.
