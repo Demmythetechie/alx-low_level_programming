@@ -10,29 +10,16 @@
 
 void rev_string(char *s)
 {
-	char *str = s;
-	int l = strlen(s) - 1;
-	int n_times = l;
-	int a[2];
-	a[0] = 0;
-	a[1] = 0;
+	char str[1000];
+	int len = strlen(s);
+	int n_times = len;
+	int num = 0;
 
-	while (n_times <= l)
+	while (num < len)
 	{
-		if (n_times == -1)
-		{
-			break;
-		}
-		else
-		{
-			while (a[0] <= a[1])
-			{
-				*(str + a[0]) = *(s + n_times);
-				a[0]++;
-			}
-			a[1]++;
-			n_times--;
-		}
+		str[n_times] = *(s + num);
+		num++;
+		n_times--;
 	}
 	s = str;
 }

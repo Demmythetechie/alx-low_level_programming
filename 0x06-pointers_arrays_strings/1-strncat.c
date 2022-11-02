@@ -1,32 +1,18 @@
-#include "main.h"
+#include<string.h>
+#include"main.h"
+
 /**
- *_strncat - concatenates two strings
- *@dest: A pointer to a character that will be changed
- *@src: A pointer to a character that will be changed
- *@n: value
- *Return: dest
+ * _strncat - This function concatenate the value in src to the dest using n.
+ * @dest: The string where what is in src is added to.
+ * @src: The string added to dest.
+ * @n: The integer n determines how many character that will be added to dest
+ *
+ * Return: Always 0
  */
 
 char *_strncat(char *dest, char *src, int n)
-
 {
-int i, j;
+	char *str = strncat(dest, src, n);
 
-i = 0;
-while (dest[i] != '\0')
-{
-i++;
-}
-
-j = 0;
-while (j < n && src[j] != '\0')
-{
-dest[i] = src[j];
-j++;
-i++;
-}
-
-dest[i] = '\0';
-
-return (dest);
+	return (str);
 }
