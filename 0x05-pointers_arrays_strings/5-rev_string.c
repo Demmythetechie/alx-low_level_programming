@@ -10,9 +10,9 @@
 
 void rev_string(char *s)
 {
-	char str[200];
+	char str[500];
 	int len = strlen(s) - 1;
-	int len2 =strlen(s) - 1;
+	int len2 = strlen(s) - 1;
 	int i = 0;
 
 	while (i <= len)
