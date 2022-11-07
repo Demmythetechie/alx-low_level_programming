@@ -10,16 +10,17 @@
 
 void rev_string(char *s)
 {
-	char str[1000];
-	int len = strlen(s);
-	int n_times = len;
-	int num = 0;
+	char str[10];
+	int len = strlen(s) - 1;
+	int len2 =strlen(s) - 1;
+	int i = 0;
 
-	while (num < len)
+	while (i <= len)
 	{
-		str[n_times] = *(s + num);
-		num++;
-		n_times--;
+		str[i] = *(s + len2);
+		i++;
+		len2--;
 	}
-	s = str;
+	str[i] = '\0';
+	strcpy(s, str);
 }
