@@ -16,6 +16,7 @@ void print_chessboard(char (*a)[8])
 	while (c < len)
 	{
 		int r = 0;
+
 		while (r < len)
 		{
 			_putchar((*(a + c))[r]);
