@@ -10,7 +10,8 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char remain[] = "result";
+	char c[] = "result";
+	char *remain = c;
 	char *result = strpbrk(s, accept);
 
 	return (strcpy(remain, result));
