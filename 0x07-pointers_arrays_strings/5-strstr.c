@@ -11,6 +11,6 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *remain = strstr(haystack, needle);
-	
+
 	return (remain);
 }
