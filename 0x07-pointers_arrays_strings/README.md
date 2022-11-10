@@ -4,3 +4,4 @@ task 2: This program scans the string s for char c using strchr
 task 3: This program returns number of matching character using s & accept
 task 4: This program returns a string when a character from accept matches s
 task 5: This program returns a string pointer if needle matches haystack.
+task 7: This program prints the sum of two diagonal of a square matrix
