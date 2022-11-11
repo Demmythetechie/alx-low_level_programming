@@ -8,7 +8,7 @@
  * Return: Always 0
  */
 
-int _strlen _recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	return (strlen(s));
 }
