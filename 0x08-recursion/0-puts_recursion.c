@@ -9,12 +9,6 @@
 
 void _puts_recursion(char *s)
 {
-	int n = 0;
 	puts(s);
 	puts("\n");
-	if (n < 3)
-	{
-		n++;
-		_puts_recursion(s);
-	}
 }
