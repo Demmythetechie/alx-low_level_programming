@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 
 /**
  * main - This program prints the number of argument passed when launching.
@@ -16,19 +17,19 @@ int main(int argc, __attribute__((unused))char *argv[])
 
 	if (argc > 9 && argc < 100)
 	{
-		putchar(unit + '0');
-		putchar(tenths + '0');
+		_putchar(unit + '0');
+		_putchar(tenths + '0');
 	}
 	else if (argc > 99 && argc < 1000)
 	{
-		putchar(unit + '0');
-		putchar(tenths + '0');
-		putchar(hundred + '0');
+		_putchar(unit + '0');
+		_putchar(tenths + '0');
+		_putchar(hundred + '0');
 	}
 	else
 	{
-		putchar(argc + '0');
+		_putchar(argc + '0');
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
