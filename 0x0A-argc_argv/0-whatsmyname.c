@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - This program prints the name of this executable file after compilation
+ * main - This program prints the name of this exe file after compilation
  * @argc: This parameter tells the number of command line argument.
  * @argv: This parameter store the name of command line arguments in it.
  *
