@@ -18,9 +18,9 @@ char *create_array(unsigned int size, char c)
 
 	if (size != 0)
 	{
-		while (n_times < size)
+		while (n_times <= size)
 		{
-			*(str + i) = c;
+			*(str + n_times) = c;
 			i++;
 		}
 		return (str);
