@@ -14,7 +14,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int n_times = 0;
 	char *str;
 
-	str = malloc(sizeof(char) * size);
+	str = (void *)malloc(sizeof(char) * size);
 
 	if (size != 0)
 	{
