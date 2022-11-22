@@ -14,10 +14,16 @@ char *create_array(unsigned int size, char c)
 	unsigned int n_times = 0;
 	char *str = malloc(sizeof(char) * size);
 
-	while (n_times <= size)
+	if (size == 0)
 	{
-		*(str + n_times) = c;
-		n_times++;
 	}
-	return (str);
+	else
+	{
+		while (n_times <= size)
+		{
+			*(str + n_times) = c;
+			n_times++;
+		}
+		return (str);
+	}
 }
