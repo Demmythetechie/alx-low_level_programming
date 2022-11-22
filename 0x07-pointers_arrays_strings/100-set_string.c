@@ -13,13 +13,12 @@ void set_string(char **s, char *to)
 {
 	char str[500];
 	char *string;
-	char null[] = "\0";
 	int len = strlen(*s);
 	int i = 0;
 
 	if (to == NULL)
 	{
-		*s = null;
+		*s = NULL;
 	}
 	else
 	{
