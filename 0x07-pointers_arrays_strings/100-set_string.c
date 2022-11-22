@@ -11,7 +11,7 @@
 
 void set_string(char **s, char *to)
 {
-	char str[500];
+	char str[12];
 	char *string;
 	int len = strlen(*s);
 	int i = 0;
@@ -27,7 +27,6 @@ void set_string(char **s, char *to)
 			str[i] = *(*s + i);
 			i++;
 		}
-		str[i] = '\0';
 		string = str;
 		strcpy(string, to);
 		*s = str;
