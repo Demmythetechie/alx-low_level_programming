@@ -23,6 +23,7 @@ char *create_array(unsigned int size, char c)
 			*(str + n_times) = c;
 			n_times++;
 		}
+		str[i] = '\0';
 		return (str);
 	}
 	else
