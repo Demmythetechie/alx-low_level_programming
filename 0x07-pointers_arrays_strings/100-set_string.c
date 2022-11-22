@@ -11,7 +11,7 @@
 
 void set_string(char **s, char *to)
 {
-	char str[12];
+	char str[500];
 	char *string;
 	int len = strlen(*s);
 	int i = 0;
