@@ -18,13 +18,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
+	while (n_times <= size)
 	{
-		while (n_times <= size)
-		{
-			*(str + n_times) = c;
-			n_times++;
-		}
-		return (str);
+		*(str + n_times) = c;
+		n_times++;
 	}
+	return (str);
 }
