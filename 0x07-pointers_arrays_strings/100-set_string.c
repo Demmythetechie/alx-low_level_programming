@@ -27,6 +27,7 @@ void set_string(char **s, char *to)
 			str[i] = *(*s + i);
 			i++;
 		}
+		str[i] = '\0';
 		string = str;
 		strcpy(string, to);
 		*s = str;
