@@ -13,16 +13,23 @@ void set_string(char **s, char *to)
 {
 	char str[500];
 	char *string;
+	char null[] = "\0";
 	int len = strlen(*s);
 	int i = 0;
 
-	while (i < len)
+	if (to == NULL)
 	{
-		str[i] = *(*s + i);
-		i++;
+		*s = null;
 	}
-
-	string = str;
-	strcpy(string, to);
-	*s = str;
+	else
+	{
+		while (i < len)
+		{
+			str[i] = *(*s + i);
+			i++;
+		}
+		string = str;
+		strcpy(string, to);
+		*s = str;
+	}
 }

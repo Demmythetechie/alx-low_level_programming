@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char *s0 = "Bob Dylan";
+	char *s0 = NULL;
 	char *s1 = "Robert Allen";
 
 	printf("%s, %s\n", s0, s1);
