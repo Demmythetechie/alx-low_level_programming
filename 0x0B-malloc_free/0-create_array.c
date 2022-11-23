@@ -12,7 +12,6 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int n_times = 0;
-	char *str = malloc(sizeof(char) * size);
 
 	if (size == 0)
 	{
@@ -20,6 +19,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
+		str = malloc(sizeof(char) * size);
 		while (n_times <= size)
 		{
 			*(str + n_times) = c;
