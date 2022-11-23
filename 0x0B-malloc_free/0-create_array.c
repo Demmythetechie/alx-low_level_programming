@@ -12,6 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int n_times = 0;
+	char *str;
 
 	if (size == 0)
 	{
