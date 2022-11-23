@@ -13,7 +13,6 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concat;
-	char *string;
 
 	if (s1 == NULL && s2 == NULL)
 	{
@@ -21,8 +20,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		string = strcat(s1, s2);
-		concat = strdup(string);
+		strcat(s1, s2);
+		concat = strdup(s1);
 		return (concat);
 	}
 }
