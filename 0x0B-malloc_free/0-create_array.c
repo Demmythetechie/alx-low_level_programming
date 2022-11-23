@@ -26,6 +26,6 @@ char *create_array(unsigned int size, char c)
 			*(str + n_times) = c;
 			n_times++;
 		}
-		return (++str);
+		return (str);
 	}
 }
