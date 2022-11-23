@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 == NULL)
 	{
-		return (NULL);
+		return (concat = strdup("\n"));
 	}
 	else if (s1 != NULL && s2 != NULL)
 	{
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 			*(concat + i) = *(s1 + i);
 			i++;
 		}
-		while (i < len)
+		while (i <= len)
 		{
 			*(concat + i) = *(s2 + n);
 			i++;
