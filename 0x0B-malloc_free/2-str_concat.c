@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 == NULL)
 	{
-		return (concat = strdup("\n"));
+		return (concat = strdup(""));
 	}
 	else if (s1 != NULL && s2 != NULL)
 	{
