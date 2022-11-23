@@ -11,13 +11,13 @@
 
 char *_strdup(char *str)
 {
-	int len = strlen(str);
 	char *result;
 
 	result = strdup(str);
-	return (result);
-	if (len == 0)
+
+	if (result == NULL)
 	{
-		return (NULL);
+		return(NULL);
 	}
+	return (result);
 }
