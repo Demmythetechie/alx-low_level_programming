@@ -12,11 +12,11 @@ void *malloc_checked(unsigned int b)
 {
 	if (b == INT_MAX || b <= 0)
 	{
-		return (malloc(b));
 		exit(98);
 	}
 	else
 	{
 		return (malloc(b));
 	}
+	exit(98);
 }
