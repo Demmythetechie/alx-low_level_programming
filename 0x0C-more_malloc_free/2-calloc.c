@@ -5,7 +5,7 @@
  * @nmemb: the number of element
  * @size: the size of the data type
  *
- * Return:
+ * Return: alloc
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -13,6 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb != 0 && size != 0)
 	{
 		void *alloc;
+
 		alloc = calloc(nmemb, size);
 		return (alloc);
 	}
