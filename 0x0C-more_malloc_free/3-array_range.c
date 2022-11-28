@@ -10,14 +10,14 @@
 
 int *array_range(int min, int max)
 {
+	int* arr;
+	int n = 0;
+	int i = min;
+	int max_min = max - min + 1;
+
 	if (max > min)
 	{
-		int n = 0;
-		int i = min;
-		int *arr;
-		int max_min = max - min;
-
-		arr = (int *)calloc(max_min, sizeof(int));
+		arr = calloc(max_min, sizeof(int));
 
 		while (n <= max_min)
 		{
@@ -26,10 +26,6 @@ int *array_range(int min, int max)
 			i++;
 		}
 		return (arr);
-	}
-	else if (min > max)
-	{
-		return (NULL);
 	}
 	else
 	{
