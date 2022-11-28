@@ -42,8 +42,8 @@ int main(void)
 {
 	int *a;
 
-	a = array_range(-512, 512);
-	simple_print_buffer(a, 1024);
+	a = array_range(4096, 4096);
+	simple_print_buffer(a, 1);
 	free(a);
 	return (0);
 }
