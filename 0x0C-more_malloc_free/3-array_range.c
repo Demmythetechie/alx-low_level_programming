@@ -15,10 +15,11 @@ int *array_range(int min, int max)
 		int n = 0;
 		int i = min;
 		int *arr;
+		int max_min = max - min;
 
-		arr = (int *)calloc(max - min, sizeof(int));
+		arr = (int *)calloc(max_min, sizeof(int));
 
-		while (n <= max - min)
+		while (n <= max_min)
 		{
 			*(arr + n) = i;
 			n++;
