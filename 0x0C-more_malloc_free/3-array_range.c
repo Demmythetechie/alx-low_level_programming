@@ -10,10 +10,18 @@
 
 int *array_range(int min, int max)
 {
-	int* arr;
+	int *arr;
 	int n = 0;
 	int i = min;
-	int max_min = max - min + 1;
+	int max_min;
+	if (min < 0)
+	{
+		max_min = max + min + 1;
+	}
+	else
+	{
+		max_min = max - min + 1;
+	}
 
 	if (max > min)
 	{
