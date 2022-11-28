@@ -21,7 +21,7 @@ int *array_range(int min, int max)
 
 		while (n < max_min)
 		{
-			*(arr + i) = i;
+			*(arr + n) = i;
 			n++;
 			i++;
 		}
