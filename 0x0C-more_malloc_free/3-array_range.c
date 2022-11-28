@@ -19,13 +19,17 @@ int *array_range(int min, int max)
 	{
 		arr = calloc(max_min, sizeof(int));
 
-		while (n <= max_min)
+		while (n < max_min)
 		{
-			*(arr + n) = i;
+			*(arr + i) = i;
 			n++;
 			i++;
 		}
 		return (arr);
+	}
+	else if (min < max)
+	{
+		return (NULL);
 	}
 	else
 	{
