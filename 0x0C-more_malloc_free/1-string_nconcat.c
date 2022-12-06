@@ -23,7 +23,7 @@ char *test1(char *s1, char *s2, unsigned int n)
 		*(str + i) = s1[i];
 		i++;
 	}
-	while (num <= n)
+	while (num < n)
 	{
 		*(str + i) = s2[num];
 		num++;
