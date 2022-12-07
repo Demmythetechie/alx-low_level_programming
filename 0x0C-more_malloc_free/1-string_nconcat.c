@@ -119,7 +119,7 @@ char *test4(__attribute__((unused)) char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		str = malloc(n * sizeof(char));
+		str = malloc((n + 1) * sizeof(char));
 		while (num < n)
 		{
 			*(str + num) = s2[num];
