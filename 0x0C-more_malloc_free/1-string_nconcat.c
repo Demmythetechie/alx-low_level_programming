@@ -70,7 +70,6 @@ char *test2(char *s1, char *s2, __attribute__((unused)) unsigned int n)
  * test3 - This program returns a malloced string holding s1 and s2
  * @s1: string_1
  * @s2: string_2
- * @n: number of byte to add
  *
  * Return: str
  */
