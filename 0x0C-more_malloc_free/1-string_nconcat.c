@@ -86,7 +86,7 @@ char *test3(char *s1, __attribute__((unused)) char *s2)
 		*(str + i) = s1[i];
 		i++;
 	}
-	*(str + i) = ' ';
+	*(str + i) = '';
 	i++;
 	*(str + i) = '\0';
 	return (str);
