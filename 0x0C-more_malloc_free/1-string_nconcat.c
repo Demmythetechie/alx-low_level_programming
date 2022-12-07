@@ -75,15 +75,13 @@ char *test2(char *s1, char *s2, __attribute__((unused)) unsigned int n)
  * Return: str
  */
 
-char *test3(char *s1, char *s2, __attribute__((unused)) unsigned int n)
+char *test3(char *s1, __attribute__((unused)) char *s2)
 {
 	int i = 0;
-
-	int __attribute__((unused)) len2 = strlen(s2);
 	int len1 = strlen(s1) + 1;
 	char *str = malloc(len1 * sizeof(char));
 
-	while (i < len1)
+	while (i <= len1 - 2)
 	{
 		*(str + i) = s1[i];
 		i++;
@@ -157,7 +155,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else if (s1 != NULL && s2 == NULL)
 	{
-		return (test3(s1, s2, n));
+		return (test3(s1, s2));
 	}
 	else
 	{
