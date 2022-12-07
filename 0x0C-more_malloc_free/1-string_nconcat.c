@@ -79,13 +79,15 @@ char *test3(char *s1, __attribute__((unused)) char *s2)
 {
 	int i = 0;
 	int len1 = strlen(s1);
-	char *str = malloc((len1 + 1) * sizeof(char));
+	char *str = malloc((len1 + 2) * sizeof(char));
 
 	while (i < len1)
 	{
 		*(str + i) = s1[i];
 		i++;
 	}
+	*(str + i) = ' ';
+	i++;
 	*(str + i) = '\0';
 	return (str);
 }
