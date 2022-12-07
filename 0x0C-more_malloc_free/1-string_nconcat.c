@@ -15,7 +15,7 @@ char *test1(char *s1, char *s2, unsigned int n)
 {
 	int i = 0;
 	unsigned int num = 0;
-	int len = strlen(s1) + n + 1;
+	int len = strlen(s1) + n + 2;
 	int len1 = strlen(s1);
 	char *str = malloc(len * sizeof(char));
 
