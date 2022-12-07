@@ -78,15 +78,14 @@ char *test2(char *s1, char *s2, __attribute__((unused)) unsigned int n)
 char *test3(char *s1, __attribute__((unused)) char *s2)
 {
 	int i = 0;
-	int len1 = strlen(s1) + 1;
-	char *str = malloc(len1 * sizeof(char));
+	int len1 = strlen(s1);
+	char *str = malloc((len1 + 1) * sizeof(char));
 
-	while (i <= len1 - 2)
+	while (i < len1)
 	{
 		*(str + i) = s1[i];
 		i++;
 	}
-	*(str + i) = ' ';
 	*(str + i) = '\0';
 	return (str);
 }
