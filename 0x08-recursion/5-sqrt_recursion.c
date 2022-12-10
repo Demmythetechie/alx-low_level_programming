@@ -1,5 +1,3 @@
-#include<math.h>
-
 /**
  * _sqrt - This function finds the sqrt of the argument n
  * @n: The squre of n
@@ -7,17 +5,17 @@
  * Return: sq
  */
 
-int _sqrt(int n)
+int _sqrt(int n, int m)
 {
-	int sq = sqrt(n);
-	if ((sq * sq) == n)
+	if ((m * m) == n)
 	{
-		return (sq);
+		return (m);
 	}
-	else
+	else if (n < 0 || m == n)
 	{
 		return (-1);
 	}
+	return _sqrt(n, m + 1);
 }
 
 /**
@@ -33,7 +31,7 @@ int _sqrt_recursion(int n)
 
 	if (n == m)
 	{
-		return (_sqrt(n));
+		return (_sqrt(n, 0));
 	}
 	return (_sqrt_recursion(n));
 }
