@@ -1,6 +1,7 @@
 /**
  * _sqrt - This function finds the sqrt of the argument n
  * @n: The squre of n
+ * @m: counter
  *
  * Return: sq
  */
@@ -15,7 +16,7 @@ int _sqrt(int n, int m)
 	{
 		return (-1);
 	}
-	return _sqrt(n, m + 1);
+	return (_sqrt(n, m + 1));
 }
 
 /**
