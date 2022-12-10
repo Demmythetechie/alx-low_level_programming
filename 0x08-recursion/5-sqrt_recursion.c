@@ -1,3 +1,5 @@
+#include<math.h>
+
 /**
  * _sqrt - This function finds the sqrt of the argument n
  * @n: The squre of n
@@ -7,23 +9,15 @@
 
 int _sqrt(int n)
 {
-	int i = 0;
-	int sq = -1;
-
-	while (i <= n)
+	int sq = sqrt(n);
+	if ((sq * sq) == n)
 	{
-		if ((i * i) == n)
-		{
-			sq = i;
-			break;
-		}
-		else
-		{
-			sq = -1;
-		}
-		i++;
+		return (sq);
 	}
-	return (sq);
+	else
+	{
+		return (-1);
+	}
 }
 
 /**
