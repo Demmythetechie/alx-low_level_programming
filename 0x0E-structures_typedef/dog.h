@@ -22,7 +22,6 @@ struct dog
 /**
  * dog_t - This replaces the type name for struct dog
  */
-
 typedef struct dog dog_t;
 
 
