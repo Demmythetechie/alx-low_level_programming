@@ -2,8 +2,8 @@
 #include"dog.h"
 
 /**
- * free_dogs - This function frees dog
- * @d: Dog variable
+ * free_dog - This function frees dog
+ * @d: dog variable
  *
  * Return: 0;
  */
@@ -11,4 +11,6 @@
 void free_dog(dog_t *d)
 {
 	free(d);
+	free(d->name);
+	free(d->owner);
 }
