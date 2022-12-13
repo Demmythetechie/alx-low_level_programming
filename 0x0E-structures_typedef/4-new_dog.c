@@ -16,8 +16,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	if (name == NULL && age == 0 && owner == NULL)
 	{
-		printf("null");
-		exit(98);
+		return (NULL);
 	}
 	else
 	{
