@@ -24,8 +24,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		char *owne;
 		dog_t *dog = malloc(sizeof(dog_t));
 		
-		nam = name;
-		owne = owner;
+		nam = strdup(name);
+		owne = strdup(owner);
 		dog->name = nam;
 		dog->age = age;
 		dog->owner = owne;
