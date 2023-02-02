@@ -1,33 +1,20 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
 
 /**
- * main - This program prints the sum of 3 or 5 multiples below 1024
+ * main - Prints natural numbers below 1024 that are
+ * multiplies of 3 or 5
  *
- * Return: Always 0
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int n = 5;
-	if (n == 5)
+	int a, b;
+
+	for (a = 1; a < 1024; a++)
 	{
-		int range = abs(1);
-		while (range < 1024)
-		{
-			int multiples = range % n;
-			if (multiples == 0)
-			{
-				int sum_multiples = abs(sum_multiples + range);
-				if (range == 1023)
-				{
-					printf("%i\n", sum_multiples);
-				}
-			}
-			range++;
-		}
+		if ((a % 3) == 0 || (a % 5) == 0)
+			b += a;
 	}
-	else
-	{
-	}
+	printf("%d\n", b);
+	return (0);
 }
