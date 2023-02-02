@@ -1,21 +1,19 @@
-#include<stdlib.h>
-#include<limits.h>
-
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * malloc_checked - This program returns a * to the allocated memory.
- * @b: n byte
- *
- * Return: void
- */
-
+ *malloc_checked - function that allocates memory using malloc
+ * @b: Unsigned int var
+ * Return: no return value
+*/
 void *malloc_checked(unsigned int b)
 {
-	if (b == INT_MAX || b <= 0)
+	char *p;
+
+	p = malloc(b);
+	if (p == NULL)
 	{
 		exit(98);
 	}
-	else
-	{
-		return (malloc(b));
-	}
+	return (p);
 }
