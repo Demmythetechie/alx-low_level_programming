@@ -1,42 +1,29 @@
-#include<stdio.h>
 #include "dog.h"
-#include<stdlib.h>
 
 /**
- * print_dog - This function prints out the variable in struct dog
- * @d: The structure being printed
- *
- * Return: void
- */
+* print_dog - prints a struct dog
+*@d: dog identification
+*
+*/
 
 void print_dog(struct dog *d)
 {
-	if ((*d).name != NULL && d->age != 0 && (*d).owner != NULL)
-	{
-		printf("Name: %s\n", (*d).name);
-		printf("Age: %f\n", (*d).age);
-		printf("Owner: %s\n", (*d).owner);
-	}
-	else if (d == NULL)
-	{
-		printf("\n");
-	}
-	else if (d->name == NULL && d->age == 0 && d->owner != NULL)
-	{
-		printf("Name: (nil)\n");
-		printf("Age: %d\n", 0);
-		printf("Owner: %s\n", (*d).owner);
-	}
-	else if (d->name == NULL && d->owner == NULL)
-	{
-		printf("Name: (nil)\n");
-		printf("Age: %f\n", (*d).age);
-		printf("Owner: (nil)\n");
-	}
-	else if (d->age == 0 && d->owner == NULL)
-	{
-		printf("Name: %s\n", (*d).name);
-		printf("Age: %d\n", 0);
-		printf("Owner: (nil)\n");
-	}
+if (d == NULL )
+return; 
+
+if ((*d).name == NULL)
+printf("nil\n");
+else
+printf("Name: %s\n", d->name);
+
+if ((*d).age < 0)
+printf("nil\n");
+else
+printf("Age: %f\n", d->age);
+
+if ((*d).owner == NULL)
+printf("nil\n");
+else
+printf("Owner: %s\n", d->owner);
+
 }
