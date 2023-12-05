@@ -1,45 +1,32 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - This program prints the sum of all positive number in argv.
- * @argc: This parameter tells the number of command line argument.
- * @argv: This parameter store the name of command line arguments in it.
- *
- * Return: 0 or 1
- */
+*main - adds positive numbers
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: 0 on success, 1 on failure
+*/
 
 int main(int argc, char *argv[])
 {
-	int i = 1;
-	int sum = 0;
+	int i, j, sum = 0;
 
-	if (argc != 1)
+	for (i = 1; i < argc; i++)
 	{
-		while (i < argc)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (atoi(argv[i]) == 0)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				return (1);
-				i = i + argc;
 			}
-			else
-			{
-				sum = sum + atoi(argv[i]);
-				if (i == argc - 1)
-				{
-					printf("%i\n", sum);
-					return (0);
-				}
-			}
-			i++;
 		}
+
+		sum += atoi(argv[i]);
 	}
-	else
-	{
-		printf("%i\n", sum);
-	}
+
+	printf("%d\n", sum);
+
 	return (0);
 }

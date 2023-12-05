@@ -1,16 +1,15 @@
-#include<stdio.h>
-#include"main.h"
+#include <stdio.h>
 
 /**
- * main - This program prints the number of argument passed when launching.
- * @argc: This parameter tells the number of command line argument.
- * @argv: This parameter store the name of command line arguments in it.
- *
- * Return: Always 0
- */
+* main - prints the number of arguments
+*@argc: number of arguments
+*@argv:array of arguments
+*Return: the number of arguments
+*/
 
-int main(int argc, __attribute__((unused))char *argv[])
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	printf("%i\n", argc - 1);
+	printf("%d\n", argc - 1);
+
 	return (0);
 }

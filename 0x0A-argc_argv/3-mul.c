@@ -1,33 +1,27 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * main - This program prints the product of two command line argument
- * @argc: This parameter tells the number of command line argument.
- * @argv: This parameter store the name of command line arguments in it.
- *
- * Return: 0 or 1
- */
+* main - prints multiplication
+*of two numbers
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: returns 0
+*/
 
 int main(int argc, char *argv[])
 {
-	int i = 1;
-	int product = 1;
+	int i, j, mul;
 
-	if (argc <= 2 || atoi(argv[1]) == 0 || atoi(argv[2]) == 0)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		while (i < argc)
-		{
-			product = product * atoi(argv[i]);
-			i++;
-		}
-		printf("%i\n", product);
-		return (0);
-	}
+
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	mul = i * j;
+
+	printf("%d\n", mul);
+	return (0);
 }
